@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "note-app",
+    "name": "یادداشت ها",
     "slug": "note-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/note-image.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./app/assets/note-image.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/note-image.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mohammad_aslani.noteapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app/assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c501f77e-73b4-4cd6-826e-6525093b69ab"
+      }
     }
   }
 }
